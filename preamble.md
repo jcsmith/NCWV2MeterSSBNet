@@ -48,3 +48,5 @@ Any stations using a horizontally polarized antenna please call now.
 This is (YOUR CALL SIGN, net control for the North Central WV 2M SSB Net are there any other stations using a horizontally polarized antenna? Please call now.
 
 
+
+
