@@ -9,7 +9,7 @@ action "Generate Net Documentation" {
 
 action "Upload to release" {
   uses = "JasonEtco/upload-to-release@master"
-  args = "preamble.pdf"
+  args = "preamble.pdf application/pdf"
   secrets = ["GITHUB_TOKEN"]
   needs = ["Generate Net Documentation"]
 }
