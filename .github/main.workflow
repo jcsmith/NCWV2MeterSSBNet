@@ -8,7 +8,7 @@ action "Generate Net Documentation" {
 }
 
 workflow "Package" {
-  on = "release"
+  on = "push"
   resolves = ["Upload to release"]
 }
 
