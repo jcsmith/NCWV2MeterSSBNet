@@ -7,11 +7,6 @@ action "Generate Net Documentation" {
 	uses = "./actions/docbuild"
 }
 
-workflow "Package" {
-  on = "push"
-  resolves = ["Upload to release"]
-}
-
 action "Upload to release" {
   uses = "JasonEtco/upload-to-release@master"
   args = "preamble.pdf"
