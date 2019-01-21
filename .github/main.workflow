@@ -16,5 +16,5 @@ action "Upload to release" {
   uses = "JasonEtco/upload-to-release@master"
   args = "preamble.pdf"
   secrets = ["GITHUB_TOKEN"]
-  needs = ["Generate net Documentation"]
+  needs = ["Generate Net Documentation"]
 }
