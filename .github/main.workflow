@@ -6,3 +6,15 @@ workflow "Documentation Generation Workflow" {
 action "Generate Net Documentation" {
 	uses = "./actions/docbuild"
 }
+
+workflow "Package" {
+  on = "release"
+  resolves = ["Upload to release"]
+}
+
+action "Upload to release" {
+  uses = "JasonEtco/upload-to-release@master"
+  args = "preamble.pdf"
+  secrets = ["GITHUB_TOKEN"]
+  needs = ["Generate net Documentation"]
+}
