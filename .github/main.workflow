@@ -3,6 +3,6 @@ workflow "Documentation Generation Workflow" {
 	    resolves = ["Generate Net Documentation"]
 }
 
-action "DocFX - Generate TypeScript Documentation" {
+action "Generate Net Documentation" {
 	uses = "./actions/docbuild"
 }
