@@ -7,7 +7,7 @@ LABEL "com.github.actions.color"="red"
 
 LABEL "maintainer"="jcsmith <juicewvu@gmail.com>"
 
-RUN apt update && apt install pandoc
+RUN apt update && apt -y install pandoc
 
 ADD entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
